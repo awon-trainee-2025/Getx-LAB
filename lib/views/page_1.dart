@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/route_manager.dart';
 
 class Page1 extends StatelessWidget {
   const Page1({super.key});
@@ -7,17 +8,15 @@ class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text('page 1'),
-      ),
+      appBar: AppBar(title: Text("page")),
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            // Navigator.pop(context);
             Get.back();
+                        // Navigator.pop(context);
+
           },
-          child: Text('Back to hemo page'),
+          child: Text("get back to home"),
         ),
       ),
     );
