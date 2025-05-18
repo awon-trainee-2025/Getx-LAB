@@ -14,7 +14,6 @@ class Page1 extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            // Navigator.pop(context);
             Get.back();
           },
           child: Text('Back to hemo page'),

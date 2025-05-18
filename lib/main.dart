@@ -40,24 +40,6 @@ class MyHomePage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            // old way
-            // 1- Navigator.push(
-            //   context,
-            //   MaterialPageRoute(builder: (context) => Page1()),
-            // );
-
-            // 2-
-            // Navigator.pushAndRemoveUntil(
-            //   context,
-            //   MaterialPageRoute(builder: (context) => Page1()),
-            //   (route) => false,
-            // );
-
-            // get way
-            // Get.to(Page1());
-            // 2- Get.offAll(Page1());
-
-            // 3- get pages
             Get.toNamed('/page-1');
 
             Get.offAllNamed('/page-1');
