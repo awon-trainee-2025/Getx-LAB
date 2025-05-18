@@ -34,36 +34,23 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text('Home page'),
+        backgroundColor:Theme.of(context).colorScheme.inversePrimary,
+        title: Text('Home Page'),
       ),
       body: Center(
         child: ElevatedButton(
-          onPressed: () {
-            // old way
-            // 1- Navigator.push(
-            //   context,
-            //   MaterialPageRoute(builder: (context) => Page1()),
-            // );
+          onPressed:() {
 
-            // 2-
-            // Navigator.pushAndRemoveUntil(
-            //   context,
-            //   MaterialPageRoute(builder: (context) => Page1()),
-            //   (route) => false,
-            // );
-
-            // get way
-            // Get.to(Page1());
-            // 2- Get.offAll(Page1());
-
+            //get way 
+            // 1- Get.to(Page1());
+            // 2- Get.ofAll(Page1());
             // 3- get pages
             Get.toNamed('/page-1');
 
-            Get.offAllNamed('/page-1');
+            Get.offAll('/page-1');
+
           },
-          child: Text('Go to page 1'),
-        ),
+            child: Text('Go to page 1')),
       ),
     );
   }
