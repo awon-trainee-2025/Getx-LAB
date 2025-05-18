@@ -9,15 +9,15 @@ class Page1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text('page 1'),
+        title: const Text('Page 1'),
       ),
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            // Navigator.pop(context);
+            // Go back using GetX
             Get.back();
           },
-          child: Text('Back to hemo page'),
+          child: const Text('Back to home page'),
         ),
       ),
     );
