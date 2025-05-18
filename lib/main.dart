@@ -41,7 +41,7 @@ class MyHomePage extends StatelessWidget {
           onPressed: () {
             Get.toNamed('/page-1');
 
-            Get.offAllNamed('/page-1');
+            // Get.offAllNamed('/page-1');
           },
           child: Text('go to page 1'),
         ),
