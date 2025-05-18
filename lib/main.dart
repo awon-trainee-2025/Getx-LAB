@@ -60,6 +60,8 @@ class MyHomePage extends StatelessWidget {
             // 3- get pages
             Get.toNamed('/page-1');
 
+            //lujain
+
             Get.offAllNamed('/page-1');
           },
           child: Text('Go to page 1'),
